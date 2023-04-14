@@ -25,13 +25,13 @@ function addNumbers(firstNumber , secondNumber) {
   return firstNumber + secondNumber
 }
 let sum = addNumbers(2, 2)
-console.log(sum);
+console.log('Sume of two numbers', sum);
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( a ,b, c){
 return a * b * c
 }
 let product = multiplyThree(2 ,2, 2)
-console.log(product);
+console.log('Product of three numbers', product);
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
@@ -58,21 +58,22 @@ if (array.length === []) {
 return array[array.length - 1];
 }
 }
- console.log(getLast([3, 8, 9]));
+ console.log('List last item in array', getLast([3, 8, 9]));
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
+function find( value, array ) {
  for(let values of array)
-  if(values === value){
+  if(values === value) {
     return true;
- } else { 
+  }else{
+}
   return false;
 }
- }
-let myArray = [2, 4, 6, 8];
- console.log(find(2, myArray));
- console.log(find(7, myArray));
+let myArray = [1, 2, 3, 4];
+ console.log('Should say true', find(2, myArray));
+ console.log('Should say true', find(7, myArray));
+
 // ----------------------
 // Stretch Goals
 // ----------------------
@@ -105,3 +106,5 @@ function sumAll( ) {
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
+
+
