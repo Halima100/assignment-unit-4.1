@@ -27,7 +27,7 @@ function addNumbers(firstNumber , secondNumber) {
 let sum = addNumbers(2, 2)
 console.log('Sume of two numbers', sum);
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( a ,b, c){
+function multiplyThree( a, b, c){
 return a * b * c
 }
 let product = multiplyThree(2 ,2, 2)
@@ -63,11 +63,12 @@ return array[array.length - 1];
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find( value, array ) {
- for(let values of array)
-  if(values === value) {
+ for (let values of array) {
+  if (values === value) {
     return true;
-  }else{
-}
+  } else {
+    }
+ }
   return false;
 }
 let myArray = [1, 2, 3, 4];
@@ -84,18 +85,22 @@ if (letter === string[0]) {
 return true;
 } else {
   return false;
-}
+  }
 }
 let string = "apple";
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
-function sumAll( ) {
-  let sum = 0
-  // TODO: loop to add items
-  return sum;
+function sumAll(arr){
+  let mySum = 0;
+  for (items of arr) {
+    mySum +=items;
+  }
+  return mySum;
 }
+let myArr = [1, 2, 3, 6];
+console.log(sumAll(myArr));
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
