@@ -25,7 +25,7 @@ function addNumbers(firstNumber , secondNumber) {
   return firstNumber + secondNumber
 }
 let sum = addNumbers(2, 2)
-console.log('Sume of two numbers', sum);
+console.log('Sum of two numbers', sum);
 // 4. Function to multiply three numbers & return the result
 function multiplyThree( a, b, c){
 return a * b * c
